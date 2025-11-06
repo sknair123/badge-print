@@ -25,9 +25,9 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller --noconsole --onefile ^
-            --add-data "assets\badge_template.jpg;assets" ^
-            --add-data "fonts\Roboto-VariableFont.ttf;fonts" ^
+          pyinstaller --noconsole --onefile `
+            --add-data "assets\badge_template.jpg;assets" `
+            --add-data "fonts\Roboto-VariableFont.ttf;fonts" `
             main.py
 
       - name: Upload artifact
